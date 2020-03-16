@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Thema Bootstrap Admin Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Thema Bootstrap Admin&rdquo; Documentation by &ldquo;Lancecoder&rdquo; v1.1</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Thema Bootstrap Admin Template&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 10/21/2015<br>
+					By: Lancecoder<br>
+					Email: <a href="mailto:lancecoder@zoho.com">lancecoder@zoho.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="#">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#structure">Structure</a></li>
+			<li><a href="#changeThemeColor">Change Theme Color</a></li>
+			<li><a href="#themeLayouts">Theme Layouts</a></li>
+			<li><a href="#pageCss">Page CSS files</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="structure"><strong>A) Structure</strong> - <a href="#toc">top</a></h3>
+		<p>All files are well organize and easy to trace.</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="Structure" width="1000px" />
+		
+		<p>As what you see above CSS Plugins are commented because I was merge it into one file so that we can save server load. And the commented links is required by the theme to work. If you think to uncomment each CSS plugins then you may also do that and comment the global-plugins.css but not recommended.</p>
+
+		<hr>
+
+
+		<h3 id="changeThemeColor"><strong>B) Change Theme Color</strong> - <a href="#toc">top</a></h3>
+
+		<img src="assets/images/changethemecolor.png" alt="Change Theme Color"/>
+
+		<p>We have 10 supported theme colors and our default theme color is green which is in the top of the image above. But it is easily to change by updating your element <pre>&lt;body id="default-scheme"&gt;</pre> to <pre>&lt;body id="colorname-scheme"&gt;</pre>
+
+		<div>
+			<p>Below is the listed colors that supported on this theme:</p>
+			<ul>
+				<li>default-scheme -> color green</li>
+				<li>turquoise-scheme</li>
+				<li>blue-scheme</li>
+				<li>amethyst-scheme</li>
+				<li>cloud-scheme</li>
+				<li>sun-flower-scheme</li>
+				<li>carrot-scheme</li>
+				<li>alizarin-scheme</li>
+				<li>concrete-scheme</li>
+				<li>wet-asphalt-scheme</li>
+			</ul>
+		</div>		
+
+		<p>Note: You may comment the unusaul colors of the above image link.</p>
+
+		<hr>
+
+		<h3 id="themeLayouts"><strong>C) Theme Layouts</strong> - <a href="#toc">top</a></h3>
+
+		<p>Lists of layout options of this theme and just follow the instructions if you want to use this feature</p>
+		<ul>
+			<li>
+				<b>Boxed Page</b>
+				<ul>
+					<li>Just add class "fixed-width-unfixed-header" in &lt;body&gt; element </li>
+					<li>and add class "unfixed-header" also in  &lt;div class="leftside-navigation"&gt; just search "leftside-navigation"</li>
+					<li>and add class also "unfixed-header" to the &lt;section id="main-content"&gt; element just search it</li>
+				</ul>
+			</li>
+			<li>
+				<b>Boxed Page + Fixed Header</b>
+				<ul>
+					<li>Just add class "fixed-width" in &lt;body&gt; element</li>
+					<li>and add class also "boxed-page-fixed-header" to the &lt;section id="main-content"&gt; element just search it</li>
+				</ul>
+			</li>
+			<li>
+				<b>Boxed Page + No sidebar</b>
+				<ul>
+					<li>Just add class "fixed-width-unfixed-header no-sidebar" in &lt;body&gt; element</li>
+					<li>and add class also "unfixed-header merge-left" to the &lt;section id="main-content"&gt; element just search it</li>
+				</ul>
+			</li>
+			<li>
+				<b>Boxed Page + No sidebar + Fixed header</b>
+				<ul>
+					<li>Just add class "fixed-width no-sidebar" in &lt;body&gt; element</li>
+					<li>and add class also "merge-left" to the &lt;section id="main-content"&gt; element just search it</li>
+				</ul>
+			</li>
+			<li>
+				<b>Full width + Unfixed header</b>
+				<ul>
+					<li>Just add class "full-content-unfixed-header" in &lt;body&gt; element</li>
+					<li>and add class also "merge-left" to the &lt;section id="main-content"&gt; element just search it </li>
+				</ul>
+			</li>
+		</ul>
+
+		<hr>
+
+		<h3 id="pageCss"><strong>D) Page CSS files</strong> - <a href="#toc">top</a></h3>
+
+		<p>The below image is the sample CSS files for the page. Every page has a unique CSS files that intended only for that page.</p>
+
+		<img src="assets/images/pageCss.png" alt="Page CSS"/>
+
+		<hr>
+
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<img src="assets/images/javascriptPlugins.png" alt="Javascript Plugins"/>
+
+		<p>The above image the theme javascript plugins is commentend and merge in into one files in order to save page load. You can uncomment it but not recommended. All of these plugins is neccessary of this theme.</p>
+
+		<p>This theme imports 4 types Javascript files.</p>
+		  
+		<ol>
+			<li><b>jQuery</b> - is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li><b>Theme custom scripts</b> - Most of the functionality of this theme is carried over of this javascript filename "theme.js". Below is the table of contents of this scripts.
+
+				<p><img src="assets/images/customScripts.png"></p>
+				
+				<p>This scripts are easy to modify if you want to modify one of the function of the above list then just search with the title. Below is sample  function.</p>
+
+				<p><img src="assets/images/sampleFunction.png"></p>
+
+				<p>How to initialize this function in your page if you want to use this with the page?</p>
+
+				<p><img src="assets/images/initScript.png"></p>
+
+			</li>
+			<li>
+				<b>Theme javascript global plugins</b> - are the javascript libraries that dependencies with JQuery or stand alone libraries that will help to reduce our development. Below are some of the plugins listed on this theme. You can find it in scripts/global-plugins.js I merge it all so that we can reduce the server load.
+				<br>
+				<p><img src="assets/images/globalPlugins.png"></p>
+
+			</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.<br><i>Note: Images are not included in downloadable version due to licensing rights.</i></p>
+		
+		<h4 style="border-bottom:1px dotted gray; padding-bottom:5px;"><b>Images</b></h4>
+
+		<ol>
+			<li><a href="https://unsplash.com">Unsplash</a></li>
+		</ol>
+
+		<h4 style="border-bottom:1px dotted gray; padding-bottom:5px;"><b>Fonts Icons</b></h4>
+
+		<ol>
+			<li><a href="https://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a> by  Dave Gandy</li>
+			<li><a href="https://fortawesome.github.io/Font-Awesome/icons/">Stroke Icons Font</a> by  Pixeden</li>
+			<li><a href="https://github.com/thesabbir/simp andle-line-icons">Simple Line Icons</a> by  Jamal Jama &amp; Ahmad Firoz</li>
+		</ol>
+
+		<h4 style="border-bottom:1px dotted gray; padding-bottom:5px;"><b>Plugins</b></h4>
+
+		<ol>
+			<li><a target="_blank"href="https://jquery.org">jQuery</a> by  jQuery Team</li>
+			<li><a target="_blank"href="http://code.jquery.com/jquery-1.9.0.js">jQuery Migrate</a> by  Dave Methvin, Richard Gibson, Igor Kalashnikov &amp; Max Riveiro</li>
+			<li><a target="_blank"href="https://github.com/js-cookie/js-cookie">jQuery Cookie</a> by  Klaus Hartl &amp; Fagner Brack</li>
+			<li><a target="_blank"href="https://jqueryui.com">jQuery UI</a> by  jQuery UI Team</li>
+			<li><a target="_blank"href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</a> by  George McGinley Smith</li>
+			<li><a target="_blank"href="http://getbootstrap.com">Bootstrap</a> by  Bootstrap Team</li>
+			<li><a target="_blank"href="http://www.designchemical.com/lab/jquery-vertical-accordion-menu-plugin/getting-started/.">DC jQuery Vertical Accordion Menu</a> by  Design Chemical</li>
+			<li><a target="_blank"href="http://rocha.la/jQuery-slimScroll">Slimscroll</a> by  Piotr Rochala</li>
+			<li><a target="_blank"href="http://demos.flesler.com/jquery/scrollTo/">scrollTo</a> by  Ariel Flesler</li>
+			<li><a target="_blank"href="http://areaaperta.com/nicescroll/">Jquery Nicescroll</a> by Inuyaksa</li>
+			<li><a target="_blank"href="http://www.minddust.com/project/bootstrap-progressbar/">Bootstrap Progressbar</a> by @minddust</li>
+			<li><a target="_blank"href="https://github.com/bfintal/Counter-Up">Counter-Up</a> by Benjamin Intal</li>
+			<li><a target="_blank"href="https://github.com/imakewebthings/waypoints">jQuery Waypoints</a> by Caleb Troughton</li>
+			<li><a target="_blank"href="http://fronteed.com/iCheck/">iCheck</a> by  Damir Sultanov</li>
+			<li><a target="_blank"href="http://eternicode.github.io/bootstrap-datepicker">Bootstrap Datepicker</a> by  @eternicode</li>
+			<li><a target="_blank"href="http://www.malot.fr/bootstrap-datetimepicker/">Bootstrap Datetimepicker</a> by  Sebastien Malot</li>
+			<li><a target="_blank"href="http://www.eyecon.ro/bootstrap-colorpicker/">Bootstrap Colorpicker</a> by  Stefan Petre</li>
+			<li><a target="_blank"href="http://timschlechter.github.io/bootstrap-tagsinput/examples/">Bootstrap Tagsinput</a> by  Tim Schlechter</li>
+			<li><a target="_blank"href="http://summernote.org">Summernote</a> by  Summernote Team</li>
+			<li><a target="_blank"href="http://www.jacklmoore.com/autosize/">Autosize</a> by  Jack Moore</li>
+			<li><a target="_blank"href="https://github.com/lou/multi-select">Multi-Select</a> by  Louis Cuny</li>
+			<li><a target="_blank"href="https://github.com/twitter/typeahead.js">Typehead.js</a> by  Twitter, Inc</li>
+			<li><a target="_blank"href="https://github.com/wycats/handlebars.js/">Handlebars</a> by  Yehuda Katz</li>
+			<li><a target="_blank"href="https://noraesae.github.io/perfect-scrollbar/">perfect-scrollbar</a> by  Hyunje Alex Jun and other contributors</li>
+			<li><a target="_blank"href="https://select2.github.io">Select2</a> by  Kevin Brown and Igor Vaynberg</li>
+			<li><a target="_blank"href="http://plugins.krajee.com/star-rating">Bootstrap Star Rating</a> by  Kartik Visweswaran</li>
+			<li><a target="_blank"href="hhttp://jasny.github.com/bootstrap/javascript.html#fileupload">bootstrap-fileupload.js</a> by  Jasny BV</li>
+			<li><a target="_blank"href="http://www.jasny.net/bootstrap/javascript/#inputmask">bootstrap-inputmask</a> by  @ArnoldDaniels</li>
+			<li><a target="_blank"href="http://jqueryvalidation.org">jQuery Validation</a> by  Jörn Zaefferer</li>
+			<li><a target="_blank"href="http://github.com/VinceG/twitter-bootstrap-wizard">Twitter bootstrap wizard</a> by Vadim Vincent Gabriel &amp; Jason Gill</li>
+			<li><a target="_blank"href="http://www.dropzonejs.com">Dropzone</a> by  Matias Meno</li>
+			<li><a target="_blank"href="hhttp://www.plupload.com">Plupload</a> by  Ephox</li>
+			<li><a target="_blank"href="https://vitalets.github.io/x-editable/">X-editable</a> by Vitaliy Potapov</li>
+			<li><a target="_blank"href="http://owlgraphic.com/owlcarousel/">OWL Carousel</a> by  Bartosz Wojciechowski </li>
+			<li><a target="_blank"href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a> by Dmitry Semenov</li>
+			<li><a target="_blank"href="http://masonry.desandro.com">Masonry</a> by  David DeSandro</li>
+			<li><a target="_blank"href="http://momentjs.com">Momentjs</a> by  Tim Wood, Iskren Chernev, Moment.js contributors</li>
+			<li><a target="_blank"href="hhttp://www.virtuosoft.eu/code/bootstrap-touchspin/">Bootstrap TouchSpin</a> by  István Ujj-Mészáros</li>
+			<li><a target="_blank"href="http://raphaeljs.com">Raphaël</a> by  Dmitry Baranovskiy</li>
+			<li><a target="_blank"href="http://t4t5.github.io/sweetalert/">Sweet Alert</a> by  Tristan Edwards</li>
+			<li><a target="_blank"href="https://github.com/andreapace/wordsrotator">jQuery Words Rotator plugin</a> by  Andrea Pace</li>
+			<li><a target="_blank"href="http://mynameismatthieu.com/WOW/">Wow Animations</a> by Matthieu Aussaguel</li>
+			<li><a target="_blank"href="http://gergeo.se/RWD-Table-Patterns">Responsive Tables</a> by  Nadan Gergeo &amp; Maggie Wachs</li>
+			<li><a target="_blank"href="https://egorshar.github.io/jquery-ui-sortable-animation/">jQuery UI Sortable Animation</a> by  Egor Sharapov</li>
+			<li><a target="_blank"href="http://iamceege.github.io/tooltipster/">Tooltipster</a> by Caleb Jacob</li>
+			<li><a target="_blank"href="http://behigh.github.io/bootstrap_dropdowns_enhancement/">Bootstrap Dropdowns Enhancement</a> by  @behigh</li>
+			<li><a target="_blank"href="http://willsteinmetz.net/demos/notific8/">jQuery notific8</a> by  Will Steinmetz</li>
+			<li><a target="_blank"href="http://fluice.com/pogo-slider">Pogo Slider</a> by  Michael Griffin</li>
+			<li><a target="_blank"href="http://www.daterangepicker.com">Bootstrap Daterangepicker</a> by  Dan Grossman</li>
+			<li><a target="_blank"href="https://www.datatables.net">DataTables</a> by  SpryMedia Ltd</li>
+			<li><a target="_blank"href="http://c3js.org">C3 Chart</a> by  Masayuki Tanaka</li>
+			<li><a target="_blank"href="http://www.flotcharts.org">Flot</a> by IOLA and Ole Laursen</li>
+			<li><a target="_blank"href="http://rendro.github.io/easy-pie-chart">easyPieChart</a> by  Robert Fleischmann</li>
+			<li><a target="_blank"href="http://morrisjs.github.io/morris.js/">Morris Chart</a> by  Olly Smith</li>
+			<li><a target="_blank"href="http://www.chartjs.org">Chartjs</a> by Nick Downie</li>
+			<li><a target="_blank"href="http://omnipotent.net/jquery.sparkline">Sparkline</a> by  Splunk Inc</li>
+			<li><a target="_blank"href="http://code.shutterstock.com/rickshaw/">Ricksaw</a> by  Shutterstock, Inc</li>
+		</ol>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes, you might consider visiting the forums and asking your question in the "Comments" section.</p> 
+		
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr>
+	</div><!-- end div .container -->
+</body>
+</html>
